@@ -75,7 +75,7 @@ form {
     @apply primary-gradient rounded-full py-4 px-8 cursor-pointer w-[600px] max-md:w-full text-3xl font-semibold text-white;
   }
   .main-section {
-    @apply flex flex-col items-center gap-8 pt-12 mx-15 pb-5;
+    @apply flex flex-col items-center gap-8 pt-12 mx-15 pb-5 min-h-screen;
   }
   .page-heading {
     @apply flex flex-col items-center gap-8 max-w-4xl text-center;
@@ -149,4 +149,30 @@ form {
   to {
     opacity: 1;
   }
+}
+
+/* Credits styling */
+.credits-container {
+  @apply flex justify-center items-center py-6 mt-auto;
+}
+
+.credits-text {
+  @apply text-sm text-gray-600 font-medium;
+}
+
+.credits-link {
+  @apply text-blue-600 hover:text-blue-800 transition-colors duration-200 underline decoration-1 underline-offset-2;
+}
+
+.credits-link:hover {
+  @apply text-blue-800;
+}
+
+/* Auth route specific styling */
+.auth-route {
+  @apply relative;
+}
+
+.auth-route .credits-container {
+  @apply absolute bottom-4 left-1/2 transform -translate-x-1/2;
 }

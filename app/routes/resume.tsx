@@ -4,6 +4,7 @@ import {usePuterStore} from "~/lib/puter";
 import Summary from "~/components/Summary";
 import ATS from "~/components/ATS";
 import Details from "~/components/Details";
+import Credits from "~/components/Credits";
 
 export const meta = () => ([
     { title: 'Resumind | Review ' },
@@ -84,6 +85,8 @@ const Resume = () => {
                     )}
                 </section>
             </div>
+            
+            <Credits />
         </main>
     )
 }
